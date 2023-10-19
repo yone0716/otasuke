@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>お答え倉庫.db - 2012 秋 (1月)</title>
+        <script src="scripts/db.js" charset="utf-8"></script>
+        <script src="../../../scripts/main.js" charset="utf-8"></script>
+        <link href="../../../styles/v1/common.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="../../../../favicon.ico">
+    </head>
+    <body>
+        <form id="input_form" action="javascript:OnSubmit();">
+            <header id="header">
+                <h1>2012 秋 問題リスト(1月)</h1>
+                <article id="table">
+                    <section id="function">
+                        <p id="space">ランダム出題された問題数: <strong id="question">0 / 0</strong></p>
+                        <hr>
+                        <p id="space">
+                            <input type="checkbox" id="smartphone" value="" checked="true">スマートフォン用のページを表示する<br>
+                            <input type="checkbox" id="newpage" value="">新しいページで開く</p>
+                    </section> 
+                    <section id="back">
+                            <p><a href="../../../../index.html" class="btn-flat-vertical-border">戻る</a></p>
+                    </section>
+                </article>
+            </header>
+            <main id="body">
+                <div id="form">
+                    <table id="inner">
+                        <tr>
+                            <th>
+                                問題番号: 
+                            </th>
+                            <td>
+                                <input type="number" id="number" size="20" min="1" value="1"> <a href="#iframeBlock" class="cp_btn2" onclick="OnSubmit();">決定</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                操作:
+                            </th>
+                            <td>
+                                <a href="#iframeBlock" class="cp_btn" onclick="OnBefore();">← 戻る</a>  <a href="#iframeBlock" class="cp_btn" onclick="OnRandom();">ランダム</a>  <a href="#iframeBlock" class="cp_btn" onclick="OnNext();">進む →</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </main>
+            <div id="iframeBlock">
+                <iframe id="newsframe" height="3000px" width="100%" frameborder="0" src=""><p>iframeが無効です。</p></iframe>
+            </div>
+        </form>
+    </body>
+</html>

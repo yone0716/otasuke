@@ -1,0 +1,80 @@
+.btn-flat-border {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+    width: 300px;
+  }
+  
+  .btn-flat-border:hover {
+    background: #67c5ff;
+    color: white;
+  }
+
+  .btn-sticky {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-left: solid 6px #ff7c5c;/*左線*/
+    color: #ff7c5c;/*文字色*/
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    margin: 10px;
+  }
+  .btn-sticky:active {
+    box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+    transform: translateY(2px);
+  }
+
+.chapter {
+    margin: 10px;
+    padding: 10px;
+}
+.index {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+}
+  h1 {
+      color: white;
+  }
+
+  h2.heading1 {
+    font-size: 1.8em;
+    padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+    color: #494949;/*文字色*/
+    background: #f4f4f4;/*背景色*/
+    border-left: solid 5px #7db4e6;/*左線*/
+    border-bottom: solid 3px #d7d7d7;/*下線*/
+  }
+
+li {
+    font-weight: bold;
+    margin: 3px;
+    padding: 3px;
+}
+
+h2.heading2 {
+    padding: 0.5em;/*文字周りの余白*/
+    color: #010101;/*文字色*/
+    background: #eaf3ff;/*背景色*/
+    border-bottom: solid 3px #516ab6;/*下線*/
+  }
+
+  h3.news {
+    border-bottom: solid 3px #cce4ff;
+    position: relative;
+  }
+  
+  h3.news:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    border-bottom: solid 3px #5472cd;
+    bottom: -3px;
+    width: 20%;
+  }

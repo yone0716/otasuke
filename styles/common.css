@@ -1,0 +1,125 @@
+* {
+    font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    padding: 0;
+    margin: auto 0;
+}
+
+header#header {
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #0288D1;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 2px 2px 4px gray;
+}
+
+div.index {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul#menu {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+li#menu-contents {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+main#contents{
+    display: flex;
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #212121;
+    justify-content: center;
+
+}
+
+article#main {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 0px 0px;
+    margin: 0px 10px 0px 0px;
+}
+
+article#inner{
+    background-color: rgb(147, 221, 255);
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px gray;
+}
+
+article#info{
+    background-color: #03A9F4;
+    width: 1000px;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px gray;
+}
+
+article#game{
+    background-color: rgb(174, 229, 255);
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px gray;
+}
+
+footer#footer{
+    width: calc(100% - 20px);
+    text-align: center;
+    background-color: #448AFF;
+    position:absolute;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px gray;
+}
+
+@media screen and (max-width:1000px) {
+    main#contents {
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .index {
+        flex-direction: column;
+    }
+    article#main {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+    article#inner {
+        width: calc(100% - 20px);
+    }
+    article#info {
+        width: calc(100% - 20px);
+    }
+    article#game {
+        width: calc(100% - 20px);
+        margin: 10px;
+        padding: 10px;
+    }
+    section.chapter {
+        margin: 0px;
+        padding: 0px;
+    }
+    h3.news {
+        margin: 5px;
+        padding: 5px;
+    }
+}
